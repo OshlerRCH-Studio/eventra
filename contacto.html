@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | EVENTRA</title>
+    <meta name="description" content="Escribe al equipo de EVENTRA, una plataforma ficticia de eventos creada como proyecto de práctica.">
+     <!-- Open Graph -->
+    <meta property="og:title" content="EVENTRA | Descubre, organiza y vive eventos">
+    <meta property="og:description" content="Descubre eventos, encuentra actividades y publica los tuyos en EVENTRA.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oshlerrch-studio.github.io/eventra/contacto.html">
+    <meta property="og:site_name" content="EVENTRA">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:image" content="https://oshlerrch-studio.github.io/eventra/assets/images/og-eventra.png">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">EVENTRA</a>
+            <nav class="nav" id="menu" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html" aria-current="page">Contacto</a>
+                <a href="crear.html" class="nav-cta">Crear evento</a>
+            </nav>
+            <a href="crear.html" class="btn btn-primary btn-small header-cta">Crear evento</a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+        </div>
+    </header>
+    <main id="contenido">
+        <section class="page-header">
+            <p class="eyebrow">Contacto</p>
+            <h1>Hablemos.</h1>
+            <p>
+                ¿Tienes dudas, ideas o comentarios sobre EVENTRA?
+                Escríbenos y cuéntanos.
+            </p>
+        </section>
+        <section class="section contact-layout" style="padding-top: 0;">
+            <form class="contact-form" id="form-contacto" novalidate aria-labelledby="titulo-form">
+                <h2 id="titulo-form">Envíanos un mensaje</h2>
+                <div class="contact-row">
+                    <div class="field">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" maxlength="80" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="field">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" maxlength="120" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" maxlength="120" placeholder="¿Sobre qué quieres hablar?" required>
+                </div>
+                <div class="field">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" maxlength="1000" placeholder="Escribe tu mensaje (mínimo 10 caracteres)" required></textarea>
+                </div>
+                <p class="form-note">
+                    Plataforma ficticia: tu mensaje no se enviará a ningún servidor.
+                </p>
+                <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                <p id="mensaje-contacto" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+            <aside class="contact-info" aria-labelledby="titulo-info">
+                <h2 id="titulo-info">Otras formas de contacto</h2>
+                <div class="contact-item">
+                    <span>Correo</span>
+                    <strong>bservicio_profesional@outlook.com</strong>
+                </div>
+                <div class="contact-item">
+                    <span>Teléfono</span>
+                    <strong>+522291278498</strong>
+                </div>
+                <div class="contact-item">
+                    <span>Ubicación</span>
+                    <strong>México</strong>
+                </div>
+                <p class="contact-info-note">
+                    Datos de ejemplo: EVENTRA es un proyecto de práctica y estos
+                    canales no existen.
+                </p>
+            </aside>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">EVENTRA</a>
+                    <p>Descubre, organiza y vive eventos.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Explorar</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="eventos.html">Eventos</a>
+                    <a href="crear.html">Crear evento</a>
+                </div>
+                <div class="footer-column">
+                    <h3>EVENTRA</h3>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 EVENTRA. Plataforma ficticia para fines de demostración y desarrollo web.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

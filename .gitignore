@@ -1,0 +1,10 @@
+
+# Archivos temporales de Windows
+Thumbs.db
+Desktop.ini
+
+# Archivos temporales de macOS
+.DS_Store
+
+# Archivos de registro
+*.log
